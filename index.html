@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -12,12 +15,14 @@
     <p>IT Student | Undergraduate</p>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#additional">Additional</a>
+    <a href="#contact">Contact</a>
+</nav>
 </header>
 
     <section id="about">
@@ -35,20 +40,50 @@
     </ul>
 </section>
 
+<section id="education">
+    <h2>Education</h2>
+    <div class="edu-item">
+        <h3>BS Information Technology</h3>
+        <p>Sindh Madrassatul Islam University | 2023 – 2028</p>
+        <p>CGPA: 3.39 / 4.0</p>
+    </div>
+    <div class="edu-item">
+        <h3>Intermediate (HSSC) – Pre-Engineering</h3>
+        <p>Bahria College DHA Phase 2, Karachi | 2023</p>
+        <p>Grade: B</p>
+    </div>
+    <div class="edu-item">
+        <h3>Matriculation (SSC) – Science</h3>
+        <p>Bahria Model School DHA Phase 2, Karachi | 2021</p>
+        <p>Grade: A</p>
+    </div>
+</section>
+
 <section id="projects">
     <h2>Projects</h2>
 
     <div class="project">
-        <h3>Hospital Management System</h3>
+        <h3>🏥 Hospital Management System</h3>
         <p>Full-stack Hospital Management System with 15 database tables in PostgreSQL (Neon DB), covering patients, doctors, appointments, billing, and medical records. Built RESTful APIs using FastAPI and Node.js with responsive dashboards for admin, doctors, and patients.</p>
-        <p><strong>Tech:</strong> HTML, CSS, JavaScript, Node.js, FastAPI, PostgreSQL</p>
+<div class="tags">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">Node.js</span>
+    <span class="tag">FastAPI</span>
+    <span class="tag">PostgreSQL</span>
+</div>
         <a href="https://github.com/NuzhatQureshi90/Hospital-Management-System" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project">
-        <h3>Student Profile Website</h3>
+        <h3>🎓 Student Profile Website</h3>
         <p>A secure student profile portal with Dark/Light mode, profile completion progress bar, and student info cards with smooth animations. Fully responsive layout with modern UI.</p>
-        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <div class="tags">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+</div>
         <a href="https://linkedin.com/posts/nuzhat-qureshi" target="_blank">View Live Demo</a>
     </div>
 
@@ -61,6 +96,13 @@
         <li>English Language Certificate – ApnaProjects.org, All Pakistan National Academy (3 Months)</li>
         <li>Mathematics 2.0 – Teaching Mathematics for Real World Applications – SSEF & LearnTech.pk</li>
     </ul>
+</section>
+
+<section id="additional">
+    <h2>Additional</h2>
+    <p><strong>Soft Skills:</strong> Problem solving, Teamwork, Communication, Time management, Self-learning</p>
+    <p><strong>Languages:</strong> English, Urdu, Pashto (Native)</p>
+    <p><strong>Interests:</strong> Learning programming and new technologies, Building small coding projects, Web development exploration</p>
 </section>
 
 <section id="contact">

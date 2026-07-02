@@ -61,9 +61,16 @@
 
 <section id="projects">
     <h2>Projects</h2>
-
     <div class="project">
-        <h3>🏥 Hospital Management System</h3>
+    <div class="slider">
+    <button class="slider-btn prev" onclick="changeSlide(this, -1)">&#8592;</button>
+    <div class="slides">
+        <img src="images/hms-login.png" alt="HMS Login" class="slide active">
+        <img src="images/hms-dashboard.png" alt="HMS Dashboard" class="slide">
+    </div>
+    <button class="slider-btn next" onclick="changeSlide(this, 1)">&#8594;</button>
+</div>
+    <h3>🏥 Hospital Management System</h3>
         <p>Full-stack Hospital Management System with 15 database tables in PostgreSQL (Neon DB), covering patients, doctors, appointments, billing, and medical records. Built RESTful APIs using FastAPI and Node.js with responsive dashboards for admin, doctors, and patients.</p>
 <div class="tags">
     <span class="tag">HTML</span>
@@ -75,18 +82,25 @@
 </div>
         <a href="https://github.com/NuzhatQureshi90/Hospital-Management-System" target="_blank">View on GitHub</a>
     </div>
-
-    <div class="project">
-        <h3>🎓 Student Profile Website</h3>
-        <p>A secure student profile portal with Dark/Light mode, profile completion progress bar, and student info cards with smooth animations. Fully responsive layout with modern UI.</p>
-        <div class="tags">
-    <span class="tag">HTML</span>
-    <span class="tag">CSS</span>
-    <span class="tag">JavaScript</span>
-</div>
-        <a href="https://linkedin.com/posts/nuzhat-qureshi" target="_blank">View Live Demo</a>
+<div class="project">
+   <div class="slider">
+    <button class="slider-btn prev" onclick="changeSlide(this, -1)">&#8592;</button>
+    <div class="slides">
+        <img src="images/sp-login.png.jpg" alt="SP Login" class="slide active">
+        <img src="images/sp-dashboard-dark.png.jpg" alt="SP Dark" class="slide">
+        <img src="images/sp-dashboard-blue.png.jpg" alt="SP Blue" class="slide">
     </div>
-
+    <button class="slider-btn next" onclick="changeSlide(this, 1)">&#8594;</button>
+</div>
+    <h3>🎓 Student Profile Website</h3>
+    <p>A secure student profile portal with Dark/Light mode, profile completion progress bar, and student info cards with smooth animations. Fully responsive layout with modern UI.</p>
+    <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+    </div>
+    <a href="https://linkedin.com/posts/nuzhat-qureshi" target="_blank">View Live Demo</a>
+</div>
 </section>
 
 <section id="certifications">
@@ -111,6 +125,6 @@
     <p>GitHub: <a href="https://github.com/NuzhatQureshi90" target="_blank">github.com/NuzhatQureshi90</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/nuzhat-qureshi" target="_blank">linkedin.com/in/nuzhat-qureshi</a></p>
 </section>
-
+<script src="script.js"></script>
 </body>
 </html>

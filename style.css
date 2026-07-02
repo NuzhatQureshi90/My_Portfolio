@@ -119,3 +119,58 @@ h1, h2, h3 {
     font-size: 13px;
     font-weight: 500;
 }
+.project-img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: block;
+}
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.project-images .project-img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 0;
+}
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.slides {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider-btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.slider-btn:hover {
+    background: #4a6582;
+}

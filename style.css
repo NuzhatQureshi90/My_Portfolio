@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: linear-gradient(-45deg, #1a2634, #2c3e50, #4a6582, #2c3e50);
+    background: linear-gradient(-45deg, #4a2c6d, #d63384, #9b2c6d, #4a2c6d);
     background-size: 300% 300%;
     animation: gradientShift 10s ease infinite;
     color: white;
@@ -15,6 +15,10 @@ header {
     padding: 60px 20px 40px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 @keyframes gradientShift {
@@ -44,7 +48,7 @@ header {
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 52px;
     margin: 12px 0 4px;
     letter-spacing: 0.5px;
     color: white;
@@ -324,11 +328,111 @@ h1, h2, h3 {
 .btn-outline {
     background: transparent;
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
 }
 
 .btn-outline:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.2);
     border-color: white;
     transform: translateY(-2px);
+}
+.intro-banner {
+    background: linear-gradient(135deg, #f3d9ff, #ffd6e8);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-label-top {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #d63384;
+    margin: 0 0 8px;
+    align-self: flex-start;
+}
+
+.intro-title {
+    margin: 0;
+    line-height: 1;
+}
+
+.intro-part1 {
+    font-size: 110px;
+    font-weight: 700;
+    color: #4a2c6d;
+}
+
+.intro-part2 {
+    font-size: 110px;
+    font-weight: 700;
+    color: #d63384;
+}
+
+.intro-label-bottom {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4a2c6d;
+    margin: 8px 0 0;
+    align-self: flex-end;
+}
+
+@media (max-width: 600px) {
+    .intro-part1, .intro-part2 {
+        font-size: 44px;
+    }
+    .intro-label-top, .intro-label-bottom {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-visual {
+    width: 380px;
+    height: 380px;
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+.header-img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.4);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+.header-role {
+    font-size: 28px;
+    color: #f3d9ff;
+    font-weight: 700;
+    margin: 0 0 16px;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.header-role::after {
+    display: none;
+}
+header h2 {
+    border-bottom: none;
 }

@@ -166,12 +166,12 @@ ul {
 }
 
 .project {
-    background-color: #fff;
+    background-color: white;
     padding: 18px 22px;
-    border-left: 4px solid #4a6582;
+    border-left: 4px solid #d63384;
     margin-top: 15px;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(74,44,109,0.1);
     transition: transform 0.2s ease;
 }
 
@@ -508,7 +508,7 @@ header h2 {
     list-style: disc;
     padding-left: 20px;
     margin: 8px 0 15px;
-    color: #4a2c6d;
+    color: #4a2c6d !important;
     font-size: 14px;
     line-height: 2;
 }
@@ -520,4 +520,315 @@ header h2 {
     line-height: 1.1;
     font-weight: 700;
     margin-right: 20px;
+}
+.about-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.about-card {
+    background: linear-gradient(135deg, #f3d9ff, #ffd6e8);
+    border-radius: 12px;
+    padding: 25px 30px;
+}
+
+.about-card h3 {
+    color: #4a2c6d;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border-bottom: none !important;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #2d1b45, #3d1535);
+    border-radius: 12px;
+    padding: 25px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(214,51,132,0.2);
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #d63384;
+    box-shadow: 0 0 20px rgba(214,51,132,0.4);
+    background: linear-gradient(135deg, #4a2c6d, #9b2c6d);
+}
+
+.skill-card p {
+    color: #f3d9ff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.skill-card img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 12px;
+}
+#skills {
+    background: linear-gradient(-45deg, #4a2c6d, #d63384, #9b2c6d, #4a2c6d) !important;
+    background-size: 300% 300% !important;
+    animation: gradientShift 10s ease infinite !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 60px 80px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+#skills h2 {
+    color: white !important;
+    border-bottom: 2px solid rgba(255,255,255,0.5) !important;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+.skill-card {
+    background: linear-gradient(135deg, #2d1b45, #3d1535);
+    border-radius: 12px;
+    padding: 35px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(214,51,132,0.2);
+    cursor: pointer;
+}
+
+.skill-card img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    color: #f3d9ff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+#skills {
+    background: #1a0a2e !important;
+}
+
+.skill-card {
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card img[alt="GitHub"] {
+    filter: invert(1);
+}
+#projects {
+    background: linear-gradient(135deg, #f3d9ff, #ffd6e8) !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 60px 80px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+#projects h2 {
+    color: #4a2c6d !important;
+    border-bottom: 2px solid #d63384 !important;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+#tools {
+    background: linear-gradient(-45deg, #4a2c6d, #d63384, #9b2c6d, #4a2c6d) !important;
+    background-size: 300% 300% !important;
+    animation: gradientShift 10s ease infinite !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 60px 80px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+#tools h2 {
+    color: white !important;
+    border-bottom: 2px solid rgba(255,255,255,0.5) !important;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+#tools .skill-card img[alt="GitHub"] {
+    filter: invert(1);
+}
+
+#skills .skill-card img[alt="GitHub"] {
+    filter: invert(1);
+}
+#additional {
+    background: linear-gradient(135deg, #f3d9ff, #ffd6e8) !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 60px 80px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+.additional-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.additional-box {
+    background: linear-gradient(135deg, #4a2c6d, #9b2c6d);
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.additional-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(74,44,109,0.3);
+}
+
+.additional-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.additional-box h3 {
+    color: #f3d9ff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3) !important;
+    padding-bottom: 10px;
+}
+
+.additional-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.additional-box ul li {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.additional-box ul li:last-child {
+    border-bottom: none;
+}
+#additional {
+    margin-top: 0 !important;
+}
+#contact {
+    background: linear-gradient(-45deg, #4a2c6d, #d63384, #9b2c6d, #4a2c6d) !important;
+    background-size: 300% 300% !important;
+    animation: gradientShift 10s ease infinite !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 60px 80px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.contact-left {
+    flex: 0 0 auto;
+}
+
+.contact-left h2 {
+    font-size: 60px;
+    color: white !important;
+    border-bottom: none !important;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.contact-tagline {
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 14px;
+    margin-top: 15px;
+    max-width: 250px;
+    line-height: 1.6;
+    opacity: 1 !important;
+}
+
+.contact-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(10px);
+    border-color: rgba(255,255,255,0.4);
+}
+
+.contact-icon {
+    font-size: 30px;
+}
+
+.contact-label {
+    color: rgba(255,255,255,0.6) !important;
+    font-size: 12px;
+    margin: 0 0 4px 0;
+    opacity: 1 !important;
+}
+
+.contact-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.contact-right a:hover {
+    color: #f3d9ff;
+    text-decoration: underline;
 }

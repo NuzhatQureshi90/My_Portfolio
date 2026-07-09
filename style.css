@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: linear-gradient(-45deg, #4a2c6d, #d63384, #9b2c6d, #4a2c6d);
+    background: #1E1B4B;
     background-size: 300% 300%;
     animation: gradientShift 10s ease infinite;
     color: white;
@@ -20,7 +20,7 @@ header {
     flex-wrap: wrap;
     overflow: visible;
     max-width: 100%;
-    width: 100;
+    width: 100%;
     box-sizing: border-box;
 }
 @keyframes gradientShift {
@@ -57,12 +57,11 @@ header h1 {
 }
 
 .highlight {
-    color: #ff6b6b;
+    color: #7C3AED;
 }
-
 .header-role {
     font-size: 28px;
-    color: #e63946;
+    color: #a78bfa;
     font-weight: 700;
     margin: 0 0 16px;
 }
@@ -113,9 +112,20 @@ header p {
 }
 
 nav {
-    margin-top: 22px;
-    position: relative;
-    z-index: 2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(30, 27, 75, 0.85);
+    backdrop-filter: blur(15px);
+    padding: 12px 40px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 nav a {
@@ -166,7 +176,7 @@ ul {
 }
 
 .project {
-    background-color: white;
+    background: #F8F5FF !important;
     padding: 18px 22px;
     border-left: 4px solid #d63384;
     margin-top: 15px;
@@ -316,16 +326,14 @@ h1, h2, h3 {
     display: inline-block;
 }
 
-.btn-primary {
-    background: #e63946;
-    color: white;
-    border: 2px solid #e63946;
+.btn-primary{
+    background:#7C3AED;
+    border-color:#7C3AED;
 }
 
-.btn-primary:hover {
-    background: #c62d3a;
-    border-color: #c62d3a;
-    transform: translateY(-2px);
+.btn-primary:hover{
+    background:#5B21B6;
+    border-color:#5B21B6;
 }
 
 .btn-outline {
@@ -340,8 +348,7 @@ h1, h2, h3 {
     transform: translateY(-2px);
 }
 .intro-banner {
-    background: linear-gradient(135deg, #f3d9ff, #ffd6e8);
-    width: 100%;
+       background: #F8F5FF;
     max-width: 100%;
     margin: 0;
     box-sizing: border-box;
@@ -374,13 +381,13 @@ h1, h2, h3 {
 .intro-part1 {
     font-size: 110px;
     font-weight: 700;
-    color: #4a2c6d;
+    color: #1E1B4B;
 }
 
 .intro-part2 {
     font-size: 110px;
     font-weight: 700;
-    color: #d63384;
+    color: #7C3AED;
 }
 
 .intro-label-bottom {
@@ -435,9 +442,7 @@ header h2 {
 
 }
 #about {
-    background: linear-gradient(-45deg, #4a2c6d, #d63384, #9b2c6d, #4a2c6d) !important;
-    background-size: 300% 300% !important;
-    animation: gradientShift 10s ease infinite !important;
+    background: #F8F5FF !important;
     border-left: none !important;
     max-width: 100% !important;
     width: 100% !important;
@@ -446,11 +451,11 @@ header h2 {
     border-radius: 0 !important;
     box-shadow: none !important;
     box-sizing: border-box !important;
+    animation: none !important;
 }
-
 #about h2 {
-    color: white !important;
-    border-bottom: 2px solid rgba(255,255,255,0.5) !important;
+    color: #1E1B4B !important;
+    border-bottom: 2px solid #7C3AED !important;
     font-size: 28px;
 }
 
@@ -515,7 +520,7 @@ header h2 {
 
 .about-left h2 {
     font-size: 80px;
-    color: white !important;
+    color:#1E1B4B !important;
     border-bottom: none !important;
     line-height: 1.1;
     font-weight: 700;
@@ -529,9 +534,11 @@ header h2 {
 }
 
 .about-card {
-    background: linear-gradient(135deg, #f3d9ff, #ffd6e8);
+    background: white;
     border-radius: 12px;
     padding: 25px 30px;
+    box-shadow: 0 3px 10px rgba(30,27,75,0.1);
+    border-left: 4px solid #7C3AED;
 }
 
 .about-card h3 {
@@ -548,7 +555,7 @@ header h2 {
 }
 
 .skill-card {
-    background: linear-gradient(135deg, #2d1b45, #3d1535);
+    background: #1E1B4B !important;
     border-radius: 12px;
     padding: 25px 15px;
     text-align: center;
@@ -559,9 +566,9 @@ header h2 {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    border-color: #d63384;
-    box-shadow: 0 0 20px rgba(214,51,132,0.4);
-    background: linear-gradient(135deg, #4a2c6d, #9b2c6d);
+    border-color: #7C3AED;
+    box-shadow: 0 0 20px rgba(124,58,237,0.4);
+    background: #3B0764;
 }
 
 .skill-card p {
@@ -602,7 +609,7 @@ header h2 {
     margin-top: 20px;
 }
 .skill-card {
-    background: linear-gradient(135deg, #2d1b45, #3d1535);
+    background:#2E1065;
     border-radius: 12px;
     padding: 35px 20px;
     text-align: center;
@@ -639,7 +646,7 @@ header h2 {
     filter: invert(1);
 }
 #projects {
-    background: linear-gradient(135deg, #f3d9ff, #ffd6e8) !important;
+    background:#FFFFFF;
     max-width: 100% !important;
     width: 100% !important;
     margin: 0 !important;
@@ -650,13 +657,13 @@ header h2 {
 }
 
 #projects h2 {
-    color: #4a2c6d !important;
-    border-bottom: 2px solid #d63384 !important;
+    color: #1E1B4B !important;
+    border-bottom: 2px solid #7C3AED !important;
     font-size: 28px;
     margin-bottom: 30px;
 }
 #tools {
-    background: linear-gradient(-45deg, #4a2c6d, #d63384, #9b2c6d, #4a2c6d) !important;
+     background: #1E1B4B !important;
     background-size: 300% 300% !important;
     animation: gradientShift 10s ease infinite !important;
     max-width: 100% !important;
@@ -682,7 +689,7 @@ header h2 {
     filter: invert(1);
 }
 #additional {
-    background: linear-gradient(135deg, #f3d9ff, #ffd6e8) !important;
+     background: #F8F5FF !important;
     max-width: 100% !important;
     width: 100% !important;
     margin: 0 !important;
@@ -700,19 +707,19 @@ header h2 {
 }
 
 .additional-box {
-    background: linear-gradient(135deg, #4a2c6d, #9b2c6d);
+    background: #1E1B4B;
     border-radius: 16px;
     padding: 30px 25px;
     text-align: center;
     color: white;
     transition: transform 0.3s ease;
+    border: 2px solid transparent;
 }
-
 .additional-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(74,44,109,0.3);
+    box-shadow: 0 10px 30px rgba(124,58,237,0.5);
+    border: 2px solid #7C3AED;
 }
-
 .additional-icon {
     font-size: 40px;
     margin-bottom: 15px;
@@ -746,7 +753,7 @@ header h2 {
     margin-top: 0 !important;
 }
 #contact {
-    background: linear-gradient(-45deg, #4a2c6d, #d63384, #9b2c6d, #4a2c6d) !important;
+    background: #1E1B4B !important;
     background-size: 300% 300% !important;
     animation: gradientShift 10s ease infinite !important;
     max-width: 100% !important;

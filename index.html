@@ -20,7 +20,7 @@
     <header>
     <div class="header-content">
     <h1>Hi, I'm <span class="highlight">Nuzhat Qureshi</span></h1>
-    <h2 class="header-role">IT Student & Web Developer</h2>
+    <h2 class="header-role"><span id="typing"></span></h2>
     <p class="header-tagline">I'm a passionate IT student at Sindh Madrassatul Islam University, currently in my third year. I love building real-world web applications — from full-stack hospital systems to student portals. With hands-on experience in Python, FastAPI, Node.js, and PostgreSQL, I'm always learning, always building, and actively seeking an internship to turn my skills into impact.</p>
 
     <p class="find-me-label">Find Me On</p>
@@ -46,12 +46,22 @@
 </div>
 </header>
 <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#tools">Tools</a>
-    <a href="#additional">Additional</a>
-    <a href="#contact">Contact</a>
+    <div class="nav-container">
+        <div class="nav-brand">NQ</div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#skills" onclick="closeMenu()">Skills</a>
+            <a href="#projects" onclick="closeMenu()">Projects</a>
+            <a href="#tools" onclick="closeMenu()">Tools</a>
+            <a href="#additional" onclick="closeMenu()">Additional</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </div>
+    </div>
 </nav>
    <section id="about">
     <div class="about-wrapper">
@@ -137,7 +147,14 @@
     <button class="slider-btn next" onclick="changeSlide(this, 1)">&#8594;</button>
 </div>
     <h3>🏥 Hospital Management System</h3>
-        <p>Full-stack Hospital Management System with 15 database tables in PostgreSQL (Neon DB), covering patients, doctors, appointments, billing, and medical records. Built RESTful APIs using FastAPI and Node.js with responsive dashboards for admin, doctors, and patients.</p>
+
+<p class="project-tech">
+REST API • PostgreSQL • FastAPI • Node.js
+</p>
+
+<p>
+Full-stack Hospital Management System built with 15+ relational database tables, handling patient records, appointments, billing, and staff management through a secure REST API.
+</p>
 <div class="tags">
     <span class="tag">HTML</span>
     <span class="tag">CSS</span>
@@ -159,7 +176,14 @@
     <button class="slider-btn next" onclick="changeSlide(this, 1)">&#8594;</button>
 </div>
     <h3>🎓 Student Profile Website</h3>
-    <p>A secure student profile portal with Dark/Light mode, profile completion progress bar, and student info cards with smooth animations. Fully responsive layout with modern UI.</p>
+
+<p class="project-tech">
+Responsive • Dark Mode • LocalStorage
+</p>
+
+<p>
+A secure student profile portal featuring Dark/Light mode, persistent theme preference via LocalStorage, and a clean responsive dashboard for managing student information.
+</p>
     <div class="tags">
         <span class="tag">HTML</span>
         <span class="tag">CSS</span>
@@ -265,7 +289,7 @@
     </div>
 </section>
 <footer>
-    <p>© 2026 Nuzhat Qureshi</p>
+    <p>© 2026 <strong>Nuzhat Qureshi</strong>. All Rights Reserved.</p>
     <p>Built with ❤️ using HTML, CSS & JavaScript</p>
     <div class="footer-links">
         <a href="https://github.com/NuzhatQureshi90" target="_blank">GitHub</a>

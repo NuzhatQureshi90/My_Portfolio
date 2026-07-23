@@ -4,8 +4,12 @@ function changeSlide(btn, direction) {
     slides.forEach((slide, i) => {
         if (slide.classList.contains('active')) activeIndex = i;
     });
+    slides[activeIndex].classList.remove('active');
+    let newIndex = (activeIndex + direction + slides.length) % slides.length;
+    slides[newIndex].classList.add('active');
+}
 
-    function toggleMenu() {
+function toggleMenu() {
     document.getElementById("hamburger").classList.toggle("open");
     document.getElementById("navLinks").classList.toggle("open");
 }
@@ -13,10 +17,6 @@ function changeSlide(btn, direction) {
 function closeMenu() {
     document.getElementById("hamburger").classList.remove("open");
     document.getElementById("navLinks").classList.remove("open");
-}
-    slides[activeIndex].classList.remove('active');
-    let newIndex = (activeIndex + direction + slides.length) % slides.length;
-    slides[newIndex].classList.add('active');
 }
 
 window.addEventListener('scroll', function() {
